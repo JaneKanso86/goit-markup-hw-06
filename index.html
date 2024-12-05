@@ -55,19 +55,11 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
-      </div>
-      <div class="hidden" data-menu>
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Soc link</div>
-        </div>
       </div>
     </header>
     <main>
@@ -79,6 +71,7 @@
             class="button button-accent"
             type="button"
             name="Order Service"
+            data-modal-open
           >
             Order Service
           </button>
@@ -519,9 +512,10 @@
     </footer>
 
     <!--Modal window-->
-    <div class="hidden">
+
+    <div class="backdrop">
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -612,70 +606,82 @@
     </div>
 
     <!--Mobile menu-->
-    <div class="hidden">
-      <button
-        type="button"
-        class="modal-btn-close close-menu-btn js-close-modal"
-      >
-        <svg class="icon-close" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
+    <div class="mobile-menu">
+      <button class="mobile-menu-btn" type="button">
+        <svg
+          class="svg-close"
+          width="8"
+          height="8"
+          viewBox="0 0 8 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_829742_687)">
+            <path
+              d="M7.29289 0.805714L4.45216 3.64645L4.09861 4L4.45216 4.35355L7.29289 7.19429L7.19429 7.29289L4.35355 4.45216L4 4.09861L3.64645 4.45216L0.805714 7.29289L0.707107 7.19429L3.54784 4.35355L3.90139 4L3.54784 3.64645L0.707107 0.805714L0.805714 0.707107L3.64645 3.54784L4 3.90139L4.35355 3.54784L7.19429 0.707107L7.29289 0.805714Z"
+              fill="#2E2F42"
+              stroke="black"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_829742_687">
+              <rect width="8" height="8" fill="white" />
+            </clipPath>
+          </defs>
         </svg>
       </button>
       <ul class="mobile-menu-list">
-        <li class="mobile-menu-item">
-          <a class="menu-link" href="">Studio</a>
+        <li>
+          <a class="active" href="">Studio</a>
         </li>
-        <li class="mobile-menu-item">
-          <a class="menu-link" href="">Portfolio</a>
+        <li>
+          <a href="">Portfolio</a>
         </li>
-        <li class="mobile-menu-item">
-          <a class="menu-link" href="">Contacts</a>
-        </li>
-      </ul>
-      <ul class="mobile-menu-contacts">
-        <li class="menu-contacts">
-          <a class="menu-contacts-link" href="tel:++110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li class="menu-contacts">
-          <a class="menu-contacts-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
+        <li>
+          <a href="">Contacts</a>
         </li>
       </ul>
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a href="" class="socials-link">
-            <svg class="socials-icon" width="24" height="24">
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contacts-list">
+            <a class="mobile-menu-item active" href="">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-menu-contacts-list">
+            <a class="mobile-menu-item" a href="">info@devstudio.com</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu-socials">
+        <li class="social-item">
+          <a class="social-links mobile" href="https://instagram.com">
+            <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-item">
-          <a href="" class="socials-link">
-            <svg class="socials-icon" width="24" height="24">
+        <li class="social-item">
+          <a class="social-links mobile" href="https://facebook.com">
+            <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-item">
-          <a href="" class="socials-link">
-            <svg class="socials-icon" width="24" height="24">
+        <li class="social-item">
+          <a class="social-links mobile" href="https://x.com">
+            <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="socials-item">
-          <a href="" class="socials-link">
-            <svg class="socials-icon" width="24" height="24">
+        <li class="social-item">
+          <a class="social-links mobile" href="https://linkedin.com">
+            <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>
       </ul>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
