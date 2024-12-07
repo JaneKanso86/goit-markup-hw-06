@@ -643,7 +643,8 @@
     </div>
 
     <!--Mobile menu-->
-    <div class="mobile-menu" data-menu>
+    <div class="mobile" data-menu>
+    <div class="container mobile-menu-container">
       <button class="mobile-menu-btn" type="button" data-menu-close>
         <svg
           class="svg-close"
@@ -667,18 +668,20 @@
           </defs>
         </svg>
       </button>
+      <nav class="mobile-menu-nav">
       <ul class="mobile-menu-list">
         <li>
-          <a class="active" href="">Studio</a>
+          <a class="active" href="./index.html">Studio</a>
         </li>
         <li>
-          <a href="">Portfolio</a>
+          <a href="./index.html">Portfolio</a>
         </li>
         <li>
-          <a href="">Contacts</a>
+          <a href="./index.html">Contacts</a>
         </li>
       </ul>
-      <nav class="mobile-menu-nav">
+      </nav>
+      <address class="mobile-menu-adr">
         <ul class="mobile-menu-contacts">
           <li class="mobile-menu-contacts-list">
             <a class="mobile-menu-item active" href="">+11 (000) 111-11-11</a>
@@ -687,37 +690,38 @@
             <a class="mobile-menu-item" a href="">info@devstudio.com</a>
           </li>
         </ul>
-      </nav>
+      </address>
       <ul class="mobile-menu-socials">
         <li class="social-item">
-          <a class="social-links mobile" href="https://instagram.com">
+          <a class="social-links mobile-links" href="https://instagram.com">
             <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-links mobile" href="https://facebook.com">
+          <a class="social-links mobile-links" href="https://facebook.com">
             <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-links mobile" href="https://x.com">
+          <a class="social-links mobile-links" href="https://x.com">
             <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-links mobile" href="https://linkedin.com">
+          <a class="social-links mobile-links" href="https://linkedin.com">
             <svg class="icon-social" width="24" height="24">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
           </a>
         </li>
       </ul>
+    </div>
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
